@@ -148,7 +148,7 @@ We still need to change the subtitle ("Security Chief • Cyborg • Never asked
 
 ![Our site so far](./enlight-images/your-name-html.png)
 
-First, let's change the subtitle. You've probably already found it — it's the text between `html±<p>` and `html±</p>` right under the `html±<h1>` and `html±</h1>` where you added your name earlier (the `html±Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this` text — the `html±&nbsp;` creates a [special type of space](https://en.wikipedia.org/wiki/Non-breaking_space), and `html±&bull;` creates a bullet point; even though they are a different color than the normal text in the editor, they are safe to delete along with the rest of the text). The `p` stands for paragraph, and it's generally used for displaying blocks of text.
+First, let's change the subtitle. You've probably already found it — it's the text between `<p>` and `</p>` right under the `<h1>` and `</h1>` where you added your name earlier (the `Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this` text — the `&nbsp;` creates a [special type of space](https://en.wikipedia.org/wiki/Non-breaking_space), and `&bull;` creates a bullet point; even though they are a different color than the normal text in the editor, they are safe to delete along with the rest of the text). The `p` stands for paragraph, and it's generally used for displaying blocks of text.
 
 Change the subtitle to something that suits you — if you have a [LinkedIn profile](https://www.linkedin.com/in/nathanhleung/), that'd be a good place to put your headline.
 
@@ -178,7 +178,7 @@ Make sure to include `http` or `https` in each link to another website, and if y
 
 If you hover over you each link and (on Chrome, at least) look at the lower left-hand corner, you should see that all the links are updated.
 
-You might be curious about why there's text in each social link that's not shown — for instance, `Twitter` between the `html±<span class="label">` and `html±</span>` below:
+You might be curious about why there's text in each social link that's not shown — for instance, `Twitter` between the `<span class="label">` and `</span>` below:
 
 ```html
 <li>
@@ -201,11 +201,11 @@ On the left-hand side of VSCode, if you click `assets` then `css` then `main.css
 
 ![The main.css file](./enlight-images/css.png)
 
-Press Ctrl + F (this lets you do an arbitrary text search across an entire file), and search for `css±.label`.
+Press Ctrl + F (this lets you do an arbitrary text search across an entire file), and search for `.label`.
 
 ![The .label styles](./enlight-images/class-label.png)
 
-The `css±display: none` in line 146 tells the browser not to show the "Twitter" label we saw above — that's why even though the text is white in the editor, we don't see it in the resulting page.
+The `display: none` in line 146 tells the browser not to show the "Twitter" label we saw above — that's why even though the text is white in the editor, we don't see it in the resulting page.
 
 While we're in `main.css`, scroll to line 214. Here, you can see all the styles applied to the background of the page. On line 229, you can change the background color of the whole page.
 
